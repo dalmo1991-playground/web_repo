@@ -1,0 +1,101 @@
+body{
+    max-width: 1100px;
+    margin: auto;
+}
+
+body{
+    counter-reset: chapter;
+}
+
+h1{
+    counter-reset: section;
+    border-bottom-width: 0px;
+}
+
+h2{
+    counter-reset: sub-section;
+}
+
+h3{
+    counter-reset: composite;
+}
+
+h4{
+    counter-reset: detail;
+}
+
+
+h1:before{
+    counter-increment: chapter;
+    content: counter(chapter) " ";
+  }
+h2:before{
+    counter-increment: section;
+    content: counter(chapter) "." counter(section) " ";
+}
+h3:before{
+    counter-increment: sub-section;
+    content: counter(chapter) "." counter(section) "." counter(sub-section) " ";
+}
+h4:before{
+    counter-increment: composite;
+    content: counter(chapter) "." counter(section) "." counter(sub-section) "." counter(composite) " ";
+}
+h5:before{
+    counter-increment: detail;
+    content: counter(chapter) "." counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";
+}
+
+.index-list ul li{
+    list-style-type: decimal;
+}
+
+.index-list{
+    margin-bottom: 2em;
+    border-bottom: solid rgba(0, 0, 0, 0.18) 2px;
+}
+
+#doc-title {
+    margin: 0;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-weight: 600;
+    font-size: 3em;
+    border-bottom: solid rgba(0, 0, 0, 0.18) 2px;
+}
+
+.warning {
+    width: 80%;
+    margin: auto;
+    border: 2pt red solid;
+    border-radius: 20px;
+    padding: 20px;
+    padding-right: 20px;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.warning p {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    margin: auto;
+}
+
+table > tbody > tr + tr > td {
+	border-top: none;
+}
+
+tbody tr:nth-child(2){
+    background-color: lightgray;
+}
+
+tbody tr:hover{
+    background-color: lightblue;
+}
