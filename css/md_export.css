@@ -103,3 +103,7 @@ tbody tr:hover{
 :not(pre) > code{
     color: darkred;
 }
+
+.deprecated {
+    text-decoration: line-through;
+}
