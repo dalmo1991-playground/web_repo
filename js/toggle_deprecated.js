@@ -10,11 +10,19 @@ button.onclick = function () {
     var display = "none";
   } else {
     button.textContent = "Hide deprecated material";
-    var display = "block";
+    var display = "show";
   }
 
   for (let index = 0; index < sections.length; index++) {
-    sections[index].style.display = display;
+    if (display == "none") {
+      sections[index].style.display = display;
+    } else {
+      if (sections[index].nodeName.toLowerCase() == "span") {
+        sections[index].style.display = "inline";
+      } else {
+        sections[index].style.display = "block";
+      }
+    }
   }
 };
 
