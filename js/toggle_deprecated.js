@@ -1,15 +1,15 @@
 var button = document.createElement("button");
-button.innerHTML = "Hide deprecated material";
+button.innerHTML = "Show deleted material";
 button.id = "toggle-deprecated";
 button.onclick = function () {
   var button = document.getElementById("toggle-deprecated");
   var sections = document.getElementsByClassName("deprecated");
 
-  if (button.textContent == "Hide deprecated material") {
-    button.textContent = "Show deprecated material";
+  if (button.textContent == "Hide deleted material") {
+    button.textContent = "Show deleted material";
     var display = "none";
   } else {
-    button.textContent = "Hide deprecated material";
+    button.textContent = "Hide deleted material";
     var display = "show";
   }
 
