@@ -106,4 +106,5 @@ tbody tr:hover{
 
 .deprecated {
     text-decoration: line-through;
+    display: none;
 }
