@@ -108,3 +108,9 @@ tbody tr:hover{
     text-decoration: line-through;
     display: none;
 }
+
+.language-text{
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
