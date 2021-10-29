@@ -93,7 +93,7 @@ table > tbody > tr + tr > td {
 	border-top: none;
 }
 
-tbody tr:nth-child(2){
+tbody tr:nth-child(2n){
     background-color: lightgray;
 }
 
