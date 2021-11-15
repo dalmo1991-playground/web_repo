@@ -26,4 +26,9 @@ button.onclick = function () {
   }
 };
 
+var message = document.createElement("span");
+message.innerHTML = "\t Deleted material still appears in the index. It is text that was relevant to the project but not needed anymore (e.g., because the scope of the project has shifted)";
+message.style.fontSize = "12pt"
+
 document.getElementsByClassName("index-list")[0].appendChild(button);
+document.getElementsByClassName("index-list")[0].appendChild(message);
