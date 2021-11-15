@@ -116,3 +116,7 @@ tbody tr:hover{
     white-space: pre-wrap;
     word-wrap: break-word;
 }
+
+a:visited {
+   color: #0000ee;
+}
